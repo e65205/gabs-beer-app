@@ -977,10 +977,6 @@ class BeerTableSeeder extends Seeder
                 'complexity' => "EASY DRINKING",
                 'section_id' => 6,
             ],
-
-
-
-
         ]);
     }
 }

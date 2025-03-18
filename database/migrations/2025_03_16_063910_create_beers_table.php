@@ -20,7 +20,7 @@ return new class extends Migration
             $table->decimal('abv', 6, 1)->default(0.0);
             $table->string('complexity');
             $table->foreignId('user_id')->nullable()->constrained()->onDelete('set null');
-            $table->integer('section')->default(1);
+            $table->foreignId('section_id')->constrained('sections')->onDelete('cascade');
             $table->timestamps();
 
             // Indexing for better query performance
